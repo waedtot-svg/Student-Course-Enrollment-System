@@ -1,0 +1,155 @@
+.root {
+    -fx-background-color: #ffd6e7;
+    -fx-font-family: "Segoe UI";
+}
+
+/* SIDEBAR */
+.sidebar {
+    -fx-background-color: #ffc1dc;
+    -fx-padding: 25;
+    -fx-spacing: 12;
+}
+
+/* TEXT */
+.logo {
+    -fx-text-fill: #000000;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+.subtitle {
+    -fx-text-fill: #444444;
+    -fx-font-size: 12px;
+}
+
+.section-label {
+    -fx-text-fill: #000000;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+}
+
+/* INPUTS */
+.input {
+    -fx-background-color: #fff0f6;
+    -fx-text-fill: black;
+    -fx-prompt-text-fill: #777777;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-border-color: #ff8fba;
+    -fx-padding: 6;
+}
+
+/* BUTTONS */
+.button {
+    -fx-background-radius: 8;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-padding: 8;
+}
+
+.btn-primary {
+    -fx-background-color: #ff9ec7;
+}
+
+.btn-success {
+    -fx-background-color: #ffb3d1;
+}
+
+.btn-danger {
+    -fx-background-color: #ff7aa8;
+}
+
+.btn-secondary {
+    -fx-background-color: #f9a8c4;
+}
+
+.button:hover {
+    -fx-opacity: 0.85;
+}
+
+/* TOP BAR */
+.topbar {
+    -fx-background-color: #ffc1dc;
+    -fx-padding: 15 20;
+}
+
+.title {
+    -fx-text-fill: black;
+    -fx-font-size: 17px;
+    -fx-font-weight: bold;
+}
+
+/* CONTENT */
+.content {
+    -fx-background-color: #ffd6e7;
+    -fx-padding: 20;
+}
+
+/* TABLE */
+.custom-table {
+    -fx-background-color: #ffd6e7;
+    -fx-border-color: #ff8fba;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-table-cell-border-color: transparent;
+}
+
+/* HEADER نفس الخلفية */
+.custom-table .column-header-background {
+    -fx-background-color: #ffd6e7;
+}
+
+.custom-table .column-header,
+.custom-table .filler {
+    -fx-background-color: #ffd6e7;
+    -fx-border-color: #ffb3d1;
+}
+
+/* الكلام أسود */
+.custom-table .column-header .label {
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+}
+
+/* ROWS */
+.custom-table .table-row-cell {
+    -fx-background-color: #ffe4ef;
+}
+
+.custom-table .table-row-cell:odd {
+    -fx-background-color: #ffd6e7;
+}
+
+.custom-table .table-row-cell:selected {
+    -fx-background-color: #ff9ec7;
+}
+
+/* CELL TEXT */
+.custom-table .table-cell {
+    -fx-text-fill: black;
+    -fx-padding: 10;
+}
+
+/* COMBOBOX */
+.combo-box,
+.combo-box-base {
+    -fx-background-color: #fff0f6;
+    -fx-border-color: #ff8fba;
+}
+
+.combo-box .list-cell,
+.combo-box .button-cell {
+    -fx-text-fill: black;
+    -fx-background-color: #fff0f6;
+}
+
+/* DATE PICKER */
+.date-picker {
+    -fx-background-color: #fff0f6;
+}
+
+.date-picker .text-field {
+    -fx-text-fill: black;
+    -fx-background-color: #fff0f6;
+}

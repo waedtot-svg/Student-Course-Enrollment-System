@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="controllers.EnrollmentController"
+            stylesheets="@../styles/EnrollmentStyle.css"
+            prefWidth="1000"
+            prefHeight="600">
+
+    <left>
+        <VBox spacing="12" styleClass="sidebar">
+            <Label text="Enrollment System" styleClass="logo"/>
+            <Label text="Manage student courses" styleClass="subtitle"/>
+
+            <Label text="STUDENT ID" styleClass="section-label"/>
+            <ComboBox fx:id="studentsCombobox" prefWidth="220" styleClass="input"/>
+
+            <Label text="COURSE ID" styleClass="section-label"/>
+            <ComboBox fx:id="coursesCombobox" prefWidth="220" styleClass="input"/>
+
+            <Label text="ENROLLMENT DATE" styleClass="section-label"/>
+            <DatePicker fx:id="enrollmentDate" prefWidth="220" styleClass="input"/>
+
+            <Button text="Add Enrollment" onAction="#addHandle"
+        prefWidth="220" styleClass="btn-primary"/>
+
+            <Button text="Update" onAction="#updateHandle"
+        prefWidth="220" styleClass="btn-success"/>
+
+            <Button text="Delete" onAction="#deleteHandle"
+        prefWidth="220" styleClass="btn-danger"/>
+
+            <Button text="View" onAction="#viewHandle"
+        prefWidth="220" styleClass="btn-secondary"/>
+
+         
+        </VBox>
+    </left>
+
+    <top>
+        <HBox spacing="10" styleClass="topbar">
+            <Label text="Student Course Enrollment Records" styleClass="title"/>
+        </HBox>
+    </top>
+
+    <center>
+        <VBox spacing="10" styleClass="content">
+            <TableView fx:id="table" styleClass="custom-table" prefHeight="520">
+                <columns>
+                    <TableColumn fx:id="enrollmentIdTC" text="Enrollment ID" prefWidth="150"/>
+                    <TableColumn fx:id="studentIdTC" text="Student ID" prefWidth="180"/>
+                    <TableColumn fx:id="courseIdTC" text="Course ID" prefWidth="150"/>
+                    <TableColumn fx:id="enrollmentDateTC" text="Enrollment Date" prefWidth="200"/>
+                    
+                </columns>
+            </TableView>
+        </VBox>
+    </center>
+
+</BorderPane>
