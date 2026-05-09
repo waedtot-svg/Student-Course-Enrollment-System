@@ -67,7 +67,6 @@ The `enrollment` table connects students with courses.
 6. Run `Main.java`.
 
 
+## Author👩🏻‍💻
 
-## Author
-
-Created as a JavaFX + JDBC assignment project.
+Created by Waed rabah zaqout
