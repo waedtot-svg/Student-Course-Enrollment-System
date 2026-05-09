@@ -68,7 +68,6 @@ The `enrollment` table connects students with courses.
 
 
 
-
 ## Author
 
 Created as a JavaFX + JDBC assignment project.
